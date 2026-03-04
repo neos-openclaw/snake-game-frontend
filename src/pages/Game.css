@@ -1,0 +1,126 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #0f0f1e;
+  padding: 1rem;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  background: #1a1a2e;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.player-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4ecdc4;
+}
+
+.player-score {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.player-score strong {
+  color: #ff6b6b;
+  font-size: 1.1rem;
+}
+
+.connection-status {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.logout-btn {
+  padding: 0.5rem 1rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+.game-board {
+  position: relative;
+  background: #16213e;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.game-board canvas {
+  display: block;
+  border-radius: 4px;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.game-controls {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.game-controls p {
+  margin: 0.5rem 0;
+}
+
+.leaderboard-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.leaderboard-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile controls */
+@media (max-width: 600px) {
+  .game-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
